@@ -1,0 +1,276 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <style>
+            .info-wrapper{
+                overflow-y: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 20px;
+            }
+            .info-container{
+                border: 1px solid #ccc;
+                width: 50vw;
+                display: block;
+                margin: auto;
+                padding: 0px 30px;
+            }
+            .info-container .title{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                padding: 30px 0px;
+            }
+            .info-container .title h1{
+                margin: inherit;
+            }
+            .info-container .title a{
+                width: 30px;
+                height: 30px;
+                background-color: #1D4775;
+                margin-left: 10px;
+                color: #fff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                padding: 2.5px;
+            }
+            .info-container .title a i{
+                padding: 7px;
+                border-radius: 50%;
+                border: 2px solid;
+                border-color: #fff;
+            }
+            .info-container .title a:hover{
+                background-color: #1D4775;
+                color: #1D4775;
+            }
+            .info-container .title a:hover i{
+                border-color: #1D4775;
+                background-color: #fff;
+            }
+            .info-container .registered-events-row,
+            .info-container .info-row{
+                justify-content: center;
+                padding-top: 25px !important;
+                padding-bottom: 0px !important;
+                word-wrap: break-word;
+            }
+            .info-container .info-row h2{
+                margin: 0px;
+                font-size: 1.1rem;
+            }
+            .info-container .info-row p{
+                font-size: 1.1rem;
+                margin: 0px;
+            }
+            .info-container .info-content{
+                border-top: 1px solid;
+                border-color: #c5c5c5;
+                padding-bottom: 25px;
+            }
+            .info-container .info-content.no-border{
+                border-top: 0px;
+                border-bottom: 0px;
+            }
+            .info-container .registered-events-row{
+                justify-content: center;
+                padding-top: 25px !important;
+                padding-bottom: 0px !important;
+                word-wrap: break-word;
+            }
+            .info-container .registered-events-row img{
+                width: 100%;
+            }
+            .info-container .registered-events-row .row{
+                padding: 5px 0px;
+            }
+            .info-container .registered-events-row h5{
+                font-size: 1rem;
+                margin: 0px;
+            }
+            .info-container .registered-events-row p{
+                font-size: 1rem;
+                margin: 0px;
+                padding-left: 15px;
+            }
+            .info-container .registered-events-row .info-col-1{
+                display: flex;
+                align-items: center;
+            }
+            .info-container .registered-events-row .info-col-1 .content{
+                width: 100%;
+            }
+            .become-a-member-btn{
+                display: inline-block;
+                background-color: #1D4775;
+                color: #fff;
+                text-decoration: none;
+                padding: 5px;
+                margin-top: 4px;
+                border-radius: 3px;
+            }
+            .become-a-member-btn:hover{
+                background-color: rgb(25, 62, 102);
+            }
+
+            @media(max-width: 900px){
+                .info-container .info-row p,
+                .info-container .registered-events-row p{
+                    padding-left: 0px;
+                    padding-top: 5px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Start of UI Page -->
+
+        <div class="content-wrapper info-wrapper">
+            <div class="container">
+                <div id="primary" class="row">
+                    <div class="info-container">
+                        <div class="title">
+                            <h1>Nino Espina</h1><a href=""><i class="fas fa-pencil-alt"></i></a>
+                        </div>  
+                        <div class="info-content no-border">
+                            <div class="row info-row">
+                                <div class="col-5">
+                                    <h2>Title</h2>
+                                </div>
+                                <div class="col-5 info-col-2">
+                                    <p>Developer</p>
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-5">
+                                    <h2>Email</h2>
+                                </div>
+                                <div class="col-5 info-col-2">
+                                    <p>email@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-5">
+                                    <h2>Company</h2>
+                                </div>
+                                <div class="col-5 info-col-2">
+                                    <p>Archintel Corp.</p>
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-5">
+                                    <h2>Phone Number</h2>
+                                </div>
+                                <div class="col-5 info-col-2">
+                                    <p>09091239383</p>
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-5">
+                                    <h2>Mobile Number</h2>
+                                </div>
+                                <div class="col-5 info-col-2">
+                                    <p>09091239383</p>
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-5">
+                                    <h2>Member</h2>
+                                </div>
+                                <div class="col-5 info-col-2">
+                                    <p>Not Member</p><a href="" class="become-a-member-btn">Become a member</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h1>Registered Events</h1>
+                        </div> 
+                        <div class="info-content">
+                            <div class="row registered-events-row">
+                                <div class="col-5 info-col-1">
+                                    <div class="content">
+                                        <h2>Event Name 1</h2>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h5>When</h5>
+                                            </div>
+                                            <div class="col-6">
+                                                <p>TBD</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h5>Where</h5>
+                                            </div>
+                                            <div class="col-6">
+                                                <p>Virtual</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h5>Amount Paid</h5>
+                                            </div>
+                                            <div class="col-6">
+                                                <p>$90</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 info-col-2">
+                                    <img src="./img/logo.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-content">
+                            <div class="row registered-events-row">
+                                <div class="col-5 info-col-1">
+                                    <div class="content">
+                                        <h2>Event Name 1</h2>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h5>When</h5>
+                                            </div>
+                                            <div class="col-6">
+                                                <p>TBD</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h5>Where</h5>
+                                            </div>
+                                            <div class="col-6">
+                                                <p>Virtual</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h5>Amount Paid</h5>
+                                            </div>
+                                            <div class="col-6">
+                                                <p>$90</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 info-col-2">
+                                    <img src="./img/logo.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Start of UI Page -->
+
+         <!-- Fontawesome CDN  -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </body>
+</html>
+
